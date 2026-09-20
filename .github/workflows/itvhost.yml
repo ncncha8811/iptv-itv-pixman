@@ -4,7 +4,10 @@ on:
   schedule:
     - cron: '0 */10 * * *'  # 每10小时运行一次
   workflow_dispatch:
-
+  
+permissions:
+  contents: write
+  
 jobs:
   update_hosts:
     runs-on: ubuntu-latest
